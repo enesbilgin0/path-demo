@@ -134,13 +134,18 @@ Yan panelde canlı olarak gösterilir:
 
 ### Örnek Sonuç Karşılaştırması (8+ Engel Senaryosu)
 
-Aynı harita üzerinde ölçülen tipik değerler:
+Preset harita üzerinde ölçülen **gerçek** değerler (medyan, 50 çalıştırma):
 
-| Algoritma | Baktığı Kare (Visited) | Yol Uzunluğu | Not |
-|---|---:|---:|---|
-| **BFS** | ~957 | 72 | En kısa yolu garanti eder, her yöne yayılır |
-| **A\*** | ~707 | 72 | Aynı en kısa yol, hedefe yönlendirilmiş arama |
-| **Verimlilik** | **~%26 daha az** | — | A*, aynı sonucu daha az iş yaparak bulur |
+| Algoritma | Baktığı Kare (Visited) | Yol Uzunluğu | Süre |
+|---|---:|---:|---:|
+| **BFS** | 957 | 72 | ~1.64 ms |
+| **A\*** | 707 | 72 | ~1.88 ms |
+| **Verimlilik** | **%26.1 daha az kare** | aynı (optimal) | — |
+
+A*, aynı uzunluktaki (72) en kısa yolu BFS'ye göre **%26.1 daha az kareye
+bakarak** bulur. (Süreler makineye göre değişir; burada grid küçük olduğu için
+mutlak süreler milisaniye mertebesindedir — asıl kazanım **bakılan kare
+sayısında**dır.)
 
 > Değerler harita düzenine göre değişir; "BFS vs A* Karşılaştır" butonuyla
 > kendi haritanızda ölçebilirsiniz. İki algoritma **daima aynı uzunlukta** yol
