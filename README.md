@@ -183,6 +183,7 @@ yzt-labirent-ajan/
 ├── ui.py             # Buton bileşeni ve yan panel / telemetri çizimi
 ├── config.py         # Boyutlar, yerleşim ve karanlık tema renk paleti
 ├── requirements.txt  # Bağımlılıklar (pygame)
+├── docs/             # README için ekran görüntüleri
 ├── .gitignore
 └── README.md
 ```
