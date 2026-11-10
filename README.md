@@ -14,18 +14,19 @@ ile engelin etrafından dolaşarak yoluna devam eder.
 
 ## 📸 Ekran Görüntüleri
 
-> Aşağıdaki alanlara kendi ekran görüntülerinizi ekleyebilirsiniz.
+**Hibrit Dinamik Kaçış** — ajan (beyaz daire) rotasının önüne konan duvarı
+fark edip turuncu yerel onarım (local repair) yamasıyla engelin etrafından
+dolaşıyor:
 
-| Genel Görünüm | Hibrit Dinamik Kaçış |
+![Hibrit dinamik kaçış](docs/screenshot-hybrid.png)
+
+| BFS — Dalga Yayılımı | A* — Yönlendirilmiş Arama |
 |:---:|:---:|
-| _`docs/screenshot-main.png`_ | _`docs/screenshot-hybrid.png`_ |
+| ![BFS](docs/screenshot-bfs.png) | ![A*](docs/screenshot-astar.png) |
 
-| BFS Dalga Yayılımı | A* Yönlendirilmiş Arama |
-|:---:|:---:|
-| _`docs/screenshot-bfs.png`_ | _`docs/screenshot-astar.png`_ |
+**Genel görünüm** (8+ engel senaryosu yüklü):
 
-Ekran görüntüsü almak için programı çalıştırın ve işletim sisteminizin
-ekran yakalama aracını kullanın (macOS: `Cmd+Shift+4`).
+![Genel görünüm](docs/screenshot-main.png)
 
 ---
 
